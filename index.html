@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby</title>
+    <link id="style1" rel="stylesheet" href="css/style1.css">
+    <link id="style2" rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>Мое хобби - пешие прогулки</h1>
+    <p>Я люблю гулять по живописным местам, наслаждаясь красотой природы и дыша свежим воздухом. В этом хобби для меня важны спокойствие, уединение и физическая активность.</p>
+    <button onclick="changeStyle()">Изменить стиль</button>
+
+    <script>
+       function changeStyle() {
+            var currentStyle = document.getElementById('style1').getAttribute('href');
+            if (currentStyle === "style1.css") {
+                document.getElementById('style2').setAttribute('href', 'style2.css');
+            } else {
+                document.getElementById('style2').setAttribute('href', 'style2.css');
+            }
+        }
+    </script>
+</body>
+</html>
